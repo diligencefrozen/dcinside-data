@@ -49,6 +49,7 @@ dcinside-data/
 
 - **Elsa vs Anna **  
   <img src="https://github.com/diligencefrozen/dcinside-data/blob/main/ss/SS03.png?raw=true" width="640">
+  <br>Elsa(Orange), Anna(Blue), (Frozen = Green)
 
 ## How to reproduce
 
