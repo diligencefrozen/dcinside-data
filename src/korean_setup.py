@@ -54,10 +54,7 @@ def _find_font_path() -> Optional[str]:
 
 
 def setup_korean(reset_cache: bool = False) -> Dict[str, Optional[str]]:
-    """
-    Matplotlib 전역 한글 폰트 설정.
-    반환값: {"font_path": str|None, "family": str|None, "ok": bool}
-    """
+
     if reset_cache:
         _rebuild_cache()
     else:
@@ -85,7 +82,7 @@ def setup_korean(reset_cache: bool = False) -> Dict[str, Optional[str]]:
         mpl.rcParams["font.family"] = "sans-serif"
         mpl.rcParams["font.sans-serif"] = [*_CAND_NAMES, *mpl.rcParams.get("font.sans-serif", [])]
 
-    mpl.rcParams["axes.unicode_minus"] = False  # 마이너스 깨짐 방지
+    mpl.rcParams["axes.unicode_minus"] = False  # 깨짐 방지
     return {"font_path": path, "family": family, "ok": bool(path)}
 
 
