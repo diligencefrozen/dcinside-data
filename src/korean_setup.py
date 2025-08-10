@@ -124,7 +124,7 @@ def test_plot() -> None:
 
     plt.figure()
     plt.plot([1, 2, 3])
-    plt.title("한글 폰트 OK? ㅋㅋㅎㅎ 엘사/안나", fontproperties=prop)
+    plt.title("테스트= 겨울왕국", fontproperties=prop)
     plt.xlabel("가로축 라벨", fontproperties=prop)
     plt.ylabel("세로축 라벨", fontproperties=prop)
     plt.tight_layout()
