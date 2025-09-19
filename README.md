@@ -19,26 +19,6 @@ pip install -r requirements.txt        # On Colab, use !pip inside the notebook
 > - `data/main_clean_okt.parquet` (e.g., OKT tokenization result)  
 > - `data/top_tokens_*.csv`, `data/top_bigrams_*.csv`, etc.
 
-## Project layout
-
-~~~
-dcinside-data/
-├─ data/                 # main.csv, cleaned files, token results (artifacts)
-├─ notebooks/
-│  ├─ main.ipynb         # 01 merge & clean (main driver)
-│  ├─ 03_tokenize.ipynb  # 03 tokenization (choose kiwi/okt/regex)
-│  └─ 04_analysis.ipynb  # 04 stats & viz (wordcloud / hourly / correlations, etc.)
-├─ src/
-│  ├─ build_main.py      # zip/csv loader + merge
-│  ├─ preprocess.py      # cleaning & normalization
-│  ├─ tokenizers.py      # tokenize_okt / tokenize_kiwi / tokenize_regex
-│  ├─ stats.py           # token/bigram/domain & correlation utilities
-│  ├─ pipeline.py        # ensure_all(okt=True/False)
-│  ├─ paths.py           # common path constants (DATA, MAIN, CLEAN, …)
-│  └─ korean_setup.py    # Korean font setup / wordcloud font path
-└─ ss/                   # result screenshots
-~~~
-
 ## Preview
 
 - **Year with the most posts**  
